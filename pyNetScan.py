@@ -26,7 +26,7 @@ def setup_venv():
             sys.exit(1)
 
     print("Virtual environment setup complete. Activate it before running the script.")
-    print(f"Activate command: {'venv\\Scripts\\activate' if os.name == 'nt' else 'source venv/bin/activate'}")
+    print(f"Activate command: {'venv\\scripts\\activate' if os.name == 'nt' else 'source venv/bin/activate'}")
     sys.exit(0)
 
 # Function to scan for devices on the network
