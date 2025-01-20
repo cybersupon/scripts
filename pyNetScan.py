@@ -14,7 +14,7 @@ def setup_venv():
         print("Creating virtual environment...")
         subprocess.check_call([sys.executable, "-m", "venv", venv_dir])
 
-    pip_path = os.path.join(venv_dir, "Scripts", "pip.exe") if os.name == "nt" else os.path.join(venv_dir, "bin", "pip")
+    pip_path = os.path.join(venv_dir, "scripts", "pip.exe") if os.name == "nt" else os.path.join(venv_dir, "bin", "pip")
 
     print("Installing dependencies in virtual environment...")
     dependencies = ["scapy", "requests"]
